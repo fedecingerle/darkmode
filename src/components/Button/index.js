@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../../context/ThemeContext";
-import "./style.css";
+import "./style.scss";
 
 function Button(props) {
   function handleClick() {
@@ -9,9 +9,9 @@ function Button(props) {
   const theme = useContext(ThemeContext);
 
   return (
-    <div>
+    <div className="buttonContainer">
       <button className={`${theme} button`} onClick={handleClick}>
-        Click
+        CAMBIAR COLOR
       </button>
     </div>
   );

@@ -6,7 +6,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   const [theme, setTheme] = useState("light");
   function handleClick() {
-    const newTheme = theme == "ligth" ? "dark" : "ligth";
+    const newTheme = theme == "light" ? "dark" : "light";
     setTheme(newTheme);
   }
   return (

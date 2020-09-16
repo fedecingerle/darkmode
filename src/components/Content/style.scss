@@ -1,0 +1,33 @@
+.contentContainer {
+  background-color: #fff;
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  border: 3px solid rgb(0, 153, 255);
+  border-radius: 10px;
+  overflow: hidden;
+
+  .content {
+    border-radius: 50%;
+    max-height: 0;
+    min-height: 0;
+    background-color: #000;
+    transform: scale(0);
+    border: 3px solid rgb(7, 241, 7);
+
+    &.dark {
+      background-color: black;
+      color: rgb(7, 241, 7);
+      border: 3px solid rgb(7, 241, 7);
+      min-height: 100px;
+      transition: all 0.5s ease;
+      transform: scale(20);
+    }
+
+    &.light {
+      background-color: white;
+      transition: all 0.5s ease;
+      transform: scale(0);
+    }
+  }
+}
